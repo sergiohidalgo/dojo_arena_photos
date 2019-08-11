@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dojo Arena</title>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg">
+    <div id="selectArena" class="selector-box">
+      <article>
+        <h1>Select Arena</h1>
+        <div class="buttons">
+          <button type="button" data-value="beach">beach</button>
+          <button type="button" data-value="earth">planet</button>
+          <button type="button" data-value="dojo">dojo</button>
+          <button type="button" data-value="forest">forest</button>
+          <button type="button" data-value="matrix">matrix</button>
+          <button type="button" data-value="snow">snow</button>
+        </div>
+      </article>
+    </div>
+    <div id="selectPlayers" class="selector-box">
+      <article>
+        <h1>Select Players</h1>
+          <select id="selectorNinjaLeft">
+            <option selected disabled>Select Ninja</option>
+            <option value="donny">Donny</option>
+            <option value="leo">Leo</option>
+            <option value="mikey">Mikey</option>
+            <option value="raphael">Raphael</option>
+          </select>
+        <select id="selectorNinjaRight">
+          <option selected disabled>Select Ninja</option>
+          <option value="donny">Donny</option>
+          <option value="leo">Leo</option>
+          <option value="mikey">Mikey</option>
+          <option value="raphael">Raphael</option>
+        </select>
+      </article>
+      <div id="ninjaLeft"></div>
+      <div id="ninjaRight"></div>
+    </div>
+  </div>
+</body>
+</html>

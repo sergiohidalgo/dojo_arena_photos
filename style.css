@@ -1,0 +1,86 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+body > .bg {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Select arena */
+.selector-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 400px;
+    height: 150px;
+    margin: auto;
+    background-color: rgba(175, 176, 179, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    border: 5px solid #afb0b3;
+    display: none;
+}
+
+.selector-box h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#selectArena .buttons button {
+    width: calc(33% - 9px);
+    margin: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0 !important;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+
+#selectArena .buttons button:hover {
+    transform: scale(1.1);
+}
+
+#selectPlayers select {
+    width: calc(50% - 20px);
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+#selectPlayers #ninjaLeft {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    left: -250px;
+    top: -80px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#selectPlayers #ninjaRight {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    left: 550px;
+    top: -80px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
